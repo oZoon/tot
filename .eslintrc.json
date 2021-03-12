@@ -1,0 +1,65 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "node": false,
+        "es6": true,
+        "mocha": false
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "babel",
+        "@typescript-eslint/eslint-plugin"
+    ],
+    "rules": {
+        // "no-var": 1, // require let or const instead of var
+        "no-eval": "error", // disable eval()
+        "indent": ["error", 4], // disable mixed spaces and tabs for indentation
+        "quotes": ["error", "single", { "avoidEscape": true }], // double inside single
+        "space-before-function-paren": [ // space
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "padded-blocks": ["error", "never"], // use blank lines
+        "prefer-arrow-callback": [0, { "allowNamedFunctions": true }],
+        "func-names": ["error", "never"],
+        // "no-use-before-define": [
+        //     "error", {
+        //         "functions": true,
+        //         "classes": true
+        //     }
+        // ],
+        "max-nested-callbacks": [
+            "error",
+            5
+        ],
+
+        "no-unused-vars": ["error", { "caughtErrorsIgnorePattern": "^ignore" }],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "babel/new-cap": 1,
+        "babel/camelcase": 1,
+        "babel/no-invalid-this": 1,
+        "babel/object-curly-spacing": 1,
+        "babel/semi": 1,
+        "babel/no-unused-expressions": 1,
+        "babel/valid-typeof": 1
+
+    }
+}

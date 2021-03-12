@@ -1,0 +1,22 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+      ["@babel/plugin-proposal-class-properties"],
+      ["@babel/transform-runtime"],
+      ["module-resolver", {
+        "root": ["./src"],
+        "alias": {
+            "core": "./src/js/core",
+            "lib": "./src/js/lib",
+            "containers": "./src/js/containers",
+            "components": "./src/js/components",
+            "images": "./src/images",
+            "styles": "./src/styles",
+
+            "so-simple": "./src/js/components/so-simple",
+            "simple": "./src/js/components/simple",
+            "complex": "./src/js/components/complex"
+        }
+    }]
+    ]
+}

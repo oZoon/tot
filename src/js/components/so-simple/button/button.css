@@ -1,0 +1,89 @@
+/* .button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12px 0 24px;
+    padding: 8px 24px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-family: Tahoma;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.button:hover {
+    background-color: #dadada;
+}
+.button:active {
+    outline: none;
+    background-color: #8c8c8c;
+}
+.button:focus {
+    outline: none;
+}
+.button[disabled] {
+    cursor: not-allowed;
+    opacity: .5;
+}
+.button.invert {
+    border: 1px solid black;
+    background-color: #b8b8b8;
+}
+.button.invert:hover {
+    background-color: #a3a3a3;
+}
+.button.invert:focus {
+    outline: none;
+}
+.button.invert:active {
+    outline: none;
+    background-color: #8c8c8c;
+} */
+
+.btn {
+    margin: 0;
+    padding: 7px 24px;
+    color: black;
+    border: 1px solid black;
+    background-color: #f6f6f6;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.btn:hover {
+    background-color: #dadada;
+}
+.btn:active {
+    outline: none;
+    background-color: #8c8c8c;
+}
+.btn:focus {
+    outline: none;
+}
+
+.btn-logout {
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+    border: 0;
+    background-color: white;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.btn-logout:hover {
+    color: whitesmoke;
+    background-color: #8c8c8c;
+}
+.btn-logout:active,
+.btn-logout:focus {
+    outline: none;
+}

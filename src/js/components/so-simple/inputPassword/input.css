@@ -1,0 +1,14 @@
+.input-password {
+    width: 150px;
+    margin-right: 8px;
+    padding: 6px;
+    border: 1px solid #8c8c8c;
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 14px;
+}
+.input-password:active,
+.input-password:focus {
+    border: 1px solid black;
+    outline: none;
+}
